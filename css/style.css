@@ -10054,6 +10054,13 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .social a img {
+    filter: grayscale(100);
+    transition: .1s all ease-in-out;
+  }
+  .social a img:hover {
+    filter: grayscale(0);
+  }
   .social a:hover {
     top: -5px;
     background: transparent;
@@ -10580,6 +10587,30 @@ nav[aria-label="breadcrumb"] li:before {
     height: 100% !important;
   }
   
+}
+
+.platform-card {
+  text-align: center;
+  margin-bottom: 10px;
+  transition: .2s all ease-in;
+  border-radius: 100%;
+  width: 70px;
+}
+.platform-card img {
+  width: 50px; /* or whatever size you want */
+  height: 50px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+.platform-card a {
+  display: block;
+  color: inherit; /* to ensure text color isn't changed */
+  text-decoration: none;
+}
+
+.platform-card:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
 }
 
     
